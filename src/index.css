@@ -21,34 +21,23 @@ video {
   width: 100%;
   height: 100%;
   top: 0;
-  background-color: rgba(0,0,0,0.25);
+  background-color: rgba(0,0,0,0.5);
 }
 
-.card {
-  position: absolute;
+.Card {
+  position: relative;
   width: 35%;
-  height: 70%;
-  top: 0;
-  bottom: 0;
-  left:0;
-  right:0;
-  margin-top: auto;
-  margin-left:auto;
-  margin-right:auto;
-  margin-bottom: auto;
-  border-radius: 10px;
-  background-color: rgba(1,1,1,0.4);
+  height: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16%;
+  border-radius: 20px;
+  background-color: rgba(1,1,1,0.3);
 }
 
-.quote {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 52%;
+.Quote {
+  padding-top: 4%;
+  margin-bottom: 1%;
   color: white;
   font-size: 20px;
   font-family: 'Poppins', sans-serif;

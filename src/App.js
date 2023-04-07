@@ -4,7 +4,7 @@ import Main from './components/Main';
 import axios from 'axios';
 
 function App() {
-  const [quote, setQuote] = useState("");
+  const [quote, setQuote] = useState("Luck is what happens when preparation meets opportunity.");
 
   const options = {
     method: 'GET',
@@ -22,9 +22,9 @@ function App() {
     })
   }
 
-  useEffect(() => {
-    fetchQuote();
-  }, []);
+  // useEffect(() => {
+  //   fetchQuote();
+  // }, []);
 
   return (
     <div className="App">
