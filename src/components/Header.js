@@ -18,7 +18,7 @@ const Header = (props) => {
         }, 1000);
 
         return () => clearInterval(refreshClock);
-    },[]);
+    });
 
     const hours = time.getHours().toString().padStart(2, '0');
     const minutes = time.getMinutes().toString().padStart(2, '0');

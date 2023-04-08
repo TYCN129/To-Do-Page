@@ -2,7 +2,7 @@ import React from 'react';
 import Quote from './Quote';
 import Card from './Card';
 import Header from './Header';
-import videoBG from '../assets/v1.mp4';
+import videoBG from '../assets/v0.mp4';
 
 const Main = (props) => {
     return (
