@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 
 * {
   margin: 0;
@@ -30,13 +30,13 @@ video {
   height: 55%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 17%;
+  margin-top: 20px;
   border-radius: 20px;
-  background-color: rgba(1,1,1,0.3);
+  background-color: rgba(1,1,1,0.4);
 }
 
 .Quote {
-  padding-top: 3%;
+  padding-top: 2.5%;
   margin-bottom: 1%;
   font-size: 20px;
   font-weight: 200;
@@ -56,13 +56,11 @@ video {
 .work {
   display: inline-block;
   width: 47%;
-  float: left;
 }
 
 .home {
   display: inline-block;
   width: 47%;
-  float: right;
 }
 
 .separator {
@@ -75,4 +73,20 @@ h3 {
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
   font-size: 25px;
+}
+
+.Clock {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 100px;
+  margin-top: 45px;
+  margin-bottom: -30px;
+}
+
+.Greeting {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 60px;
 }

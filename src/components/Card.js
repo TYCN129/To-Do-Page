@@ -1,22 +1,14 @@
 import React from 'react';
+import HeaderButtons from './HeaderButtons';
+import TaskList from './TaskList';
 
-const Main = (props) => {
+const Card = (props) => {
     return (
         <div className='Card'>
-            <div className='HeaderButtons'>
-                <div className='work'>
-                    <h3>Work</h3>
-                </div>
-                <div className='separator'><h3>|</h3></div>
-                <div className='home'>
-                    <h3>Home</h3>
-                </div>
-            </div>
-            <div className='TaskList'>
-
-            </div>
+            <HeaderButtons />
+            <TaskList />
         </div>
     );
 }
 
-export default Main;
+export default Card;

@@ -4,7 +4,7 @@ import Main from './components/Main';
 import axios from 'axios';
 
 function App() {
-  const [quote, setQuote] = useState("Luck is what happens when preparation meets opportunity.");
+  const [quote, setQuote] = useState("Victory belongs to the most persevering.");
 
   const options = {
     method: 'GET',
