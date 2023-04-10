@@ -32,7 +32,7 @@ video {
   margin-right: auto;
   margin-top: 20px;
   border-radius: 20px;
-  background-color: rgba(1,1,1,0);
+  background-color: rgba(1,1,1,0.3);
 }
 
 .Quote {
@@ -44,9 +44,7 @@ video {
   font-family: 'Poppins', sans-serif;
 }
 
-.HeaderButtons {
-  padding-top: 3.5%;
-  padding-bottom: 3%;
+.CardHeader {
   font-weight: 100;
   font-size: 23px;
   color: white;
@@ -54,11 +52,15 @@ video {
 }
 
 .work {
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: inline-block;
   width: 47%;
 }
 
 .home {
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: inline-block;
   width: 47%;
 }
@@ -92,10 +94,9 @@ h3 {
 }
 
 .ListContainer {
-  margin-top: 2.5%;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  height: 330px;
+  height: 350px;
   overflow-y: auto;
 }
