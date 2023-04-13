@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
+import { CardContext } from './Card';
 
 const CardBody = (props) => {
     const listItems = [{
@@ -42,7 +43,22 @@ const CardBody = (props) => {
         ]
     }];
 
-    const findArrayByMode = (mode) => listItems.filter((list) => list.mode === mode)
+    const findArrayByMode = (mode) => taskList.filter((list) => list.mode === mode)
+
+    const [newTask, setNewTask] = useState("");
+    const [taskList, setTaskList] = useState(listItems);
+
+    const {mode} = useContext(CardContext);
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log(newTask);
+        let listObj = taskList.filter((object) => object.mode === mode)[0];
+        listObj.items = [...listObj.items, {id: 77, text: newTask}]
+        const newList = [...taskList.filter((object) => object.mode !== mode), listObj];
+        setTaskList(newList);
+        setNewTask("");
+    }
     
     return (
         <div className='CardBody'>
@@ -52,7 +68,11 @@ const CardBody = (props) => {
                         return <h3 key={item.id}>{item.text}</h3>
                     })}
                 </ul>
-                
+            </div>
+            <div className='TextArea'>
+                <form onSubmit={handleSubmit}>
+                    <input type='text' placeholder='New Task' value={newTask} onChange={(event) => {setNewTask(event.target.value)}}/>
+                </form>
             </div>
         </div>
     );
